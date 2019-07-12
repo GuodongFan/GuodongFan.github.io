@@ -1,43 +1,32 @@
-permalink: /:categories/:title/
+title: Hacker-Blog
+description: "A Jekyll Blog Theme For Hackers"
+author:
+  name: "SomeHacker"
+  email: "someone@somewebsite.somedomain"
+  url: "https://ashishchaudhary.in/hacker-blog"
 
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  input:  GFM
-  syntax_highlighter: rouge
+baseurl: /
 
-
-paginate: 10
-paginate_path: "page/:num"
-baseurl: ""
-
-
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
 
 defaults:
   -
     scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: post
-      styles : [highlight.css,gitment.css,post.css]
-      scripts : [gitment.js, post.js]
+      layout: "post"
 
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
 
-
-title: "GuodongFan"
-email: fgdsdut@163.com
-description: ""
-github:
-  username: GuodongFan
-swiftype:
-  searchId: iXZyPokVfxFaBTvi64Y6
-gitment:
-    repo: blog
-    client_id: a6fb73b3e790e234bab8
-    client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
-
-url: "https://GuodongFan.github.io/blog"
-imgrepo: "https://GuodongFan.github.io/blog/static/img"
-
-
+# Custom variables
+owner : "SomeHacker"
+year : "2018"
