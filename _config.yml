@@ -26,4 +26,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-
+  
+# Custom variables
+owner : "GuodongFan"
+year : "2019"
