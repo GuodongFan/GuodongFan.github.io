@@ -17,6 +17,8 @@ published: true
 
 ## 2. 基于模糊决策的服务排序
 
+找个数据集，几种方法做对比。
+
 ## 3. 基于 FAHP 与规划图 规划图 融合 的 Web服务组合
 
 ## 4. 基于模糊控制和二分图的QoS感知的服务组合
@@ -26,3 +28,5 @@ published: true
 ### 5.1 机器学习
 
 ### 5.2 微服务
+
+发现了个做web service的博士的博客，虽然已经好多年没更新了，希望对自己有一定的帮助。https://www.cnblogs.com/yuquanlaobo
