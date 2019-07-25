@@ -2,6 +2,7 @@
 title: 边缘计算的前景和挑战
 published: true
 category: review
+tag: edge
 ---
 Shi Weisong, IEEE Internet of Things Journal(2016).
 

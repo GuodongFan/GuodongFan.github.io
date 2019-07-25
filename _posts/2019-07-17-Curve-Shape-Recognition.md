@@ -1,6 +1,7 @@
 ---
 title: 呼吸心跳识别
 published: true
+tag: algorithm
 ---
 
 ## 数字信号的时域特征

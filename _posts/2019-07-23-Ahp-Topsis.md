@@ -1,6 +1,7 @@
 ---
 title: AHP和TOPSIS对比
 published: true
+tag: ranking
 ---
 
 算法 | 优点 |  缺点
