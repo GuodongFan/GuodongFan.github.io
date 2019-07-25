@@ -63,3 +63,7 @@ $p_1$属性视角下，服务不可分辨；$p_2$下有2组不可分辨；$p_3$�
 $SIG_X(x)=\frac{GD(X)-GD(X\cup x)}{GD(X)}=1-\frac{I_{X\cup x}}{I_X}$
 
 定义 5. 设有服务集$S=(WS,A,P)$,对$\forall p \in A$，定义属性$p$的参考度为其对$WS$中不同服务的区别能力，记为$REF(p)=SIG_\emptyset (P)=1-\|I_p\|/|WS|^2$
+
+定义 6. 设有服务集$S=(WS,A,P)$,定义属性p(\in A)的客观群众为 ow(p)=REF(p)/\sum_{p\in A}REF(p)
+
+定义 7. 设有服务集$S=(WS,A,P)$,若$OQ(ws^*)=max\{OQ(ws)|ws\in WS \}$,则称$ws^*$为$WS$中整体性能最佳的服务。其中，$OQ(ws)=\sum_{p\in A} nv_{ws}(p).ow(P)$表示服务$ws$的客观QoS, $nv_{ws}(p)$表示服务$ws$在属性$p$上的归一化取值.
