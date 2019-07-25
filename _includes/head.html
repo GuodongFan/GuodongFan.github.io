@@ -18,3 +18,12 @@
   </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 </head>
+<h4>Category</h4>
+<ul>
+    //这里使用了 jekyll 语法，会被编译，所以加多个"\"
+    {\% for category in site.categories %\}
+    <li><a href="/categories/{\{ category | first }\}/" title="view all
+posts">{\{ category | first }\} {\{ category | last | size }\}</a>
+    </li>
+    {\% endfor %\}
+</ul>

@@ -1,6 +1,7 @@
 ---
 title: 训练YOLOv3
 published: true
+category: work
 ---
 
 ## 为什么选择YOLOv3
