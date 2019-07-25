@@ -2,7 +2,7 @@
 title: 一种综合考虑主客观权重的 Web 服务 QoS 度量算法
 published: true
 category: review
-tag: ranking,QoS
+tags: ranking QoS
 ---
 马友, 王尚广, 孙其博, & 杨放春, 软件学报(2016)
 
