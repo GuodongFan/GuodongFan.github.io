@@ -61,3 +61,5 @@ $p_1$属性视角下，服务不可分辨；$p_2$下有2组不可分辨；$p_3$�
 
 定义 4. 设$I=(U,A)$为一个信息系统，$X\subseteq A,x\in A$。$x$对于$X$的重要程度，即在$X$中增加属性$x$后知识粒度的减小程度，记为
 $SIG_X(x)=\frac{GD(X)-GD(X\cup x)}{GD(X)}=1-\frac{I_{X\cup x}}{I_X}$
+
+定义 5. 设有服务集$S=(WS,A,P)$,对$\forall p \in A$，定义属性$p$的参考度为其对$WS$中不同服务的区别能力，记为$REF(p)=SIG_\emptyset (P)=1-\|I_p\|/|WS|^2$
