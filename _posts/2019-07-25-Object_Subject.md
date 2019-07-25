@@ -66,4 +66,4 @@ $SIG_X(x)=\frac{GD(X)-GD(X\cup x)}{GD(X)}=1-\frac{I_{X\cup x}}{I_X}$
 
 定义 6. 设有服务集$S=(WS,A,P)$,定义属性p(\in A)的客观群众为 ow(p)=REF(p)/\sum_{p\in A}REF(p)
 
-定义 7. 设有服务集$S=(WS,A,P)$,若$OQ(ws^*)=max\{OQ(ws)|ws\in WS \}$,则称$ws^*$为$WS$中整体性能最佳的服务。其中，$OQ(ws)=\sum_{p\in A} nv_{ws}(p).ow(P)$表示服务$ws$的客观QoS, $nv_{ws}(p)$表示服务$ws$在属性$p$上的归一化取值.
+定义 7. 设有服务集$S=(WS,A,P)$,若$OQ(ws^x)=max\{OQ(ws)|ws\in WS \}$,则称$ws^x$为$WS$中整体性能最佳的服务。其中，$OQ(ws)=\sum_{p\in A} nv_{ws}(p).ow(P)$表示服务$ws$的客观QoS, $nv_{ws}(p)$表示服务$ws$在属性$p$上的归一化取值.
