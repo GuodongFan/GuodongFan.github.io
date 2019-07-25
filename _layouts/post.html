@@ -4,6 +4,14 @@ layout: default
 
 <article>
   <h2>{{ page.title }}</h2>
+  <ul>
+      //这里使用了 jekyll 语法，会被编译，所以加多个"\"
+      {\% for category in site.categories %\}
+      <li><a href="/categories/{\{ category | first }\}/" title="view all
+  posts">{\{ category | first }\} {\{ category | last | size }\}</a>
+      </li>
+      {\% endfor %\}
+  </ul>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
   {{ content }}
 </article>
