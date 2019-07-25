@@ -1,13 +1,22 @@
-<footer class="footer" role="contentinfo">
-	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-{{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a>.</p>
-		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
-	</div>
-</footer>
+{% assign trans = site.data.values[site.lan] %}
+<div class="footer">
+    <p>&copy;{{ site.time | date: '%Y' }} {{ site.name }}{{ trans.thanks }}
+            {% for thank in site.data.thanks %}
+                <a href="{{ thank.url }}">
+                {{ thank.title }}
+                </a>
+                <!-- not the last, output a ',' -->
+                {% if forloop.last == false %}
+                ,
+                {% endif %}
+            {% endfor %}
+    </p>
+</div>
 
-<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/holder.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- 
+    {% include disqus-counts.html %}
+    {% include analytics.html %} 
+-->
+
+</body>
+</html>

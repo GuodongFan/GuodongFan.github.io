@@ -1,45 +1,50 @@
-<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">
-        <img src="{{ '/styles/images/logo.jpg' | prepend: site.baseurl }}">
-      </a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.name }}</title>
+	<link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!--[if lt IE 9]>
+       <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" type="text/css">
+{% include isso-comments.html %}
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    {% assign trans = site.data.values[site.lan] %}
+                    <li class="active"><a href="{{ site.baseurl }}/">{{ trans.home }}</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/archive.html">{{ trans.archive }}</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/categories.html">{{ trans.categories }}</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/tags.html">{{ trans.tags }}</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/about.html">{{ trans.about }}</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">    
-        <li>
-          <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-        </li>
-        <li>
-          <a href="{{ '/categories/' | prepend: site.baseurl }}">大类分解</a>
-        </li>
-        <li>
-          <a href="{{ '/tag' | prepend: site.baseurl }}">小类内聚</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a rel="nofollow" target="_blank" href="{{site.github}}">Github</a></li>
-            <li><a rel="nofollow" target="_blank" href="{{site.resume_site}}">关于作者</a></li>
-            <li><a rel="nofollow" href="{{ '/books' | prepend: site.baseurl }}">我的书单</a></li>
-            <li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li>
-            <li><a rel="nofollow" href="{{ '/reference' | prepend: site.baseurl }}">推荐博客</a></li>
-            <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS订阅</a></li>
-            <li class="divider"></li>
-            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+</div>
