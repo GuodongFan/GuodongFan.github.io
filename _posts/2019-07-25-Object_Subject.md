@@ -56,3 +56,5 @@ $p_1$属性视角下，服务不可分辨；$p_2$下有2组不可分辨；$p_3$�
 定义 1. 称$I=(U,A,V,f)$为一个信息系统，其中，$U$为论域，是非空有限对象集；$A$为非空有限的属性集合；对于$a\in A$, $V_a$是$a$的值域，且$V=\bigcap_{a\in A}V_a$；$F:U\times A\to V$成为信息函数，使得对每一$A\in A, u\in U$，都有$f(u,a)\in V_a$。
 
 定义 2. 对于任一$X\subseteq A$，定义$X$上的不可分辨关系$I_x$为$I_x=\{(x,y)\in U\times U \| \forall a\in X, f(x,a)=f(y,a)\}$
+
+定义 3. 设$I=(U,A)$为一个信息系统，$X\subseteq A$, $I_x$为定义在$X$上的不可分辨关系，$I_x$也称为知识，知识$I_x$的粒度定义为GD(I_x)=|I_x|/|U^2|=|I_x|/|U|^2
