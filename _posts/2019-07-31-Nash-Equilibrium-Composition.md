@@ -16,4 +16,4 @@ WSO（Web Services Orchestration）定义了组成编制（orchestration）的�
 WSC（Web Services Choreography）关注于定义多方如何在一个更大的业务事务中进行协作。WSC通过“各方描述自己如何与其他Web服务进行公共消息交换”来定义业务交互，而不是像WSO中那样描述一方是如何执行某个具体业务流程的。
 
 ## 解决的问题
-不同用户工作量不同， 为了减少资源过度提供或者提供不足的风险。
+服务组合的QoS 由参与组合的服务共同决定，因此，需要有效的机制来调节这些服务提供商以动态地和共同地决定服务组合方案，与用户建立SLA(Service Level Agreement)，以及在提供商之间划分收入。
