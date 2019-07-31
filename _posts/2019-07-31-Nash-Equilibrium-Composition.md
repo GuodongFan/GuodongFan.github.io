@@ -1,6 +1,5 @@
 ---
-title: Nash Equilibrium and Decentralized Pricing for QoS Aware Service Composition in
-Cloud Computing Environments
+title: Nash Equilibrium and Decentralized Pricing for QoS Aware Service Composition in Cloud Computing Environments
 published: true
 category: review
 tag: Composition
@@ -23,3 +22,5 @@ WSC（Web Services Choreography）关注于定义多方如何在一个更大的�
 第i个基本服务提供者 $csp_i (i \in \{1,...,n\})$
 
 第i个基本服务 $s_i$
+
+$$
