@@ -23,4 +23,10 @@ WSC（Web Services Choreography）关注于定义多方如何在一个更大的�
 
 第i个基本服务 $s_i$
 
-$\omega=\lbrack(\overrightarrow{Q_1},...,\overrightarrow{Q_n}),(p_1,...,p_n)\rbrack$
+$\omega=\lbrack(\overrightarrow{Q_1},...,\overrightarrow{Q_n}),(p_1,...,p_n)\rbrack$, $\overrightarrow{Q_i}$代表$S_i$的QoS;$p_i$代表价格;$p_i$是从用户的付款$p_u$拆分出来的.
+
+服务提供商的利润 $f_i(x_i)=revenue_i(x_i, X_{-i})-cost_i(x_i)$
+
+
+
+##
