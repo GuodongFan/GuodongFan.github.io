@@ -23,4 +23,4 @@ WSC（Web Services Choreography）关注于定义多方如何在一个更大的�
 
 第i个基本服务 $s_i$
 
-$$
+$\omega=\lbrack(\overrightarrow{Q_1},...,\overrightarrow{Q_n}),(p_1,...,p_n)\rbrack$
