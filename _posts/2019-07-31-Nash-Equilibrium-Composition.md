@@ -19,7 +19,7 @@ WSC（Web Services Choreography）关注于定义多方如何在一个更大的�
 
 ## 符号
 
-第i个基本服务提供者 $csp_i (i \in \{1,...,n\})$
+第i个基本服务提供者 $csp_i (i \in \lbrack 1,...,n\rbrack)$
 
 第i个基本服务 $s_i$
 
