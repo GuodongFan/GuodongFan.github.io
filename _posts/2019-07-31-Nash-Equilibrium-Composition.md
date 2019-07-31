@@ -27,6 +27,9 @@ $\omega=\lbrack(\overrightarrow{Q_1},...,\overrightarrow{Q_n}),(p_1,...,p_n)\rbr
 
 服务提供商的利润 $f_i(x_i)=revenue_i(x_i, X_{-i})-cost_i(x_i)$, $X_{-i}$代表其他基本服务的响应时间.
 
-reference service参考服务，构建每种类型服务的历史执行时间的常识。
+reference service参考服务，构建每种类型服务的历史执行时间的常识.
+
+$1-\lamda$表示并行度.
+
 
 ##
