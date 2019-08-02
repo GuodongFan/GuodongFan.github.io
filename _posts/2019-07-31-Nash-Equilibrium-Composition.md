@@ -50,10 +50,10 @@ $\max \limits_{x_i \in X_i} f_i(x_i;X_{-i})$
 
 ## 纳什均衡
 
-定义. 服务执行时间的出价向量$X=(x_1,...,x_n)$是非合作性博弈的纳什均衡，如果对于每个服务提供者$csp_i$($\forall i \in \mathrm{N}$)，$f_i(x_i;X_{-i})\ge f_i(i_i^';X_{-i})$, $\forall x^' \in X_i$.
+定义. 服务执行时间的出价向量$X=(x_1,...,x_n)$是非合作性博弈的纳什均衡，如果对于每个服务提供者$csp_i$($\forall i \in \mathrm{N}$)，$f_i(x_i;X_{-i})\ge f_i(\dot  i_i;X_{-i})$, $\forall \dot x \in X_i$.
 
 ## 怎样达到纳什均衡
 
 通过解决Karush Kuhn Tucker（KKT）条件，找到其一阶必要条件的解决方案.
 
-$f_i^'(x_i;X_{-i})=0$
+$\dot f_i(x_i;X_{-i})=0$
