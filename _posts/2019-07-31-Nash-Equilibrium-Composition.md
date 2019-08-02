@@ -29,7 +29,7 @@ $\omega=\lbrack(\overrightarrow{Q_1},...,\overrightarrow{Q_n}),(p_1,...,p_n)\rbr
 
 reference service参考服务，构建每种类型服务的历史执行时间的常识.
 
-$1-\lamda$表示并行度.
+$1-\lambda$表示并行度.
 
 
 ## 收入按比例分配
@@ -44,4 +44,4 @@ $x=(x_1, ..., x_n)$, $x_i$代表服务商声明的相应时间.
 
 ## 最优化
 
-$\mathop{max}_{x_i \in X_i} f_i(x_i;X_{-i})$
+$\Max_{x_i \in X_i} f_i(x_i;X_{-i})$
