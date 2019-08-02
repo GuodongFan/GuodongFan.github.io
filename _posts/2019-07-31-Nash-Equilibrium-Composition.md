@@ -44,4 +44,4 @@ $x=(x_1, ..., x_n)$, $x_i$代表服务商声明的相应时间.
 
 ## 最优化
 
-$max_{x_i \in X_i} f_i(x_i;X_{-i})$
+$\mathop{max}_{x_i \in X_i} f_i(x_i;X_{-i})$
