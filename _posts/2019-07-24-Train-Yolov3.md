@@ -124,3 +124,9 @@ darknet/MakeFile文件
 ## 查看GPU使用量
 每10秒刷新一次
 watch -n 10 nvidia-smi
+
+发现GPU占用率不高，于是修改配置文件
+```
+batch=64
+subdivisions=16
+```
