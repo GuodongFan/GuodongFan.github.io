@@ -130,6 +130,10 @@ watch -n 10 nvidia-smi
 batch=64
 subdivisions=16
 ```
+修改类的数量classes
+
+修改挨着[yolo]层的filter=3*(classes+5)
+
 
 ## 获取预训练模型
 
