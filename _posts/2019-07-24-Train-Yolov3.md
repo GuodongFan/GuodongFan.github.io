@@ -5,6 +5,64 @@ category: work
 tag: YOLO
 ---
 
+## 挂载数据盘
+
+```
+root@plusai:/# df -l
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev            16449300       0  16449300   0% /dev
+tmpfs            3294676    4272   3290404   1% /run
+/dev/vda1       41152812 9050828  30198328  24% /
+tmpfs           16473372     116  16473256   1% /dev/shm
+tmpfs               5120       0      5120   0% /run/lock
+tmpfs           16473372       0  16473372   0% /sys/fs/cgroup
+tmpfs            3294676      20   3294656   1% /run/user/111
+tmpfs            3294676       0   3294676   0% /run/user/0
+```
+
+```
+root@plusai:/# fdisk -l
+Disk /dev/vda: 40 GiB, 42949672960 bytes, 83886080 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe2eb87fa
+
+Device     Boot Start      End  Sectors Size Id Type
+/dev/vda1  *     2048 83886046 83883999  40G 83 Linux
+
+
+Disk /dev/vdb: 300 GiB, 322122547200 bytes, 629145600 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+```
+
+首先设置文件格式
+mkfs.ext4 /dev/vdb
+
+创建要挂载到的目录
+mkdir /data
+
+挂载
+mount -t ext4 /dev/vdb /data
+
+需要分区
+fdisk /dev/sdb
+进入分区命令行后，输入n 建立分区，输入p进行主分区，输入1 只分一个分区。进行完成后，输入w写入分区并退出.
+
+## 配置环境
+
+安装git
+sudo apt-get install git
+
+使用git下载darknet
+git clone https://github.com/pjreddie/darknet
+
+
+
 ## 为什么选择YOLOv3
 RCNN族，最先进的MASK RCNN速度太慢，不能满足real time。因此，在公司项目中选定YOLOv3做目标检测。
 
