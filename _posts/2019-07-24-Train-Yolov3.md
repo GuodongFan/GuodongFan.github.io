@@ -130,3 +130,7 @@ watch -n 10 nvidia-smi
 batch=64
 subdivisions=16
 ```
+
+## 获取预训练模型
+
+ ./darknet partial cfg/yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
