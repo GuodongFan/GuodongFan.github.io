@@ -120,3 +120,7 @@ darknet/MakeFile文件
 -->COMMON+= -DGPU -I/usr/local/cuda-9.1/include
 6. LDFLAGS+= -L/usr/local/cuda/lib64-lcuda -lcudart -lcublas -lcarand
 --> LDFLAGS+= -L/usr/local/cuda-9.1/lib64-lcuda -lcudart -lcublas -lcarand
+
+## 查看GPU使用量
+每10秒刷新一次
+watch -n 10 nvidia-smi
