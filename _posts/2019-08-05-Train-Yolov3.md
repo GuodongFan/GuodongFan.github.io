@@ -134,4 +134,4 @@ subdivisions=16
 ## 获取预训练模型
 
  ./darknet partial cfg/yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
-直接读入模型进行预训练是不行的.
+直接读入模型进行训练是不行的.
