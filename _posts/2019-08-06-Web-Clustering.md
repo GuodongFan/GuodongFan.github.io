@@ -23,3 +23,8 @@ G=(V, E), V是服务的集合，$e_{i,j}=(v_i, v_j)\in E$是边， $e_{i,j}=1$ �
 ## 实现
 
 ![Architecture](http://plusnet.cn/assets/include/web_clustering.png)
+
+1. Doc2Vecc
+2. SiNE, 已建立好了服务之间的关系
+
+描述服务的字符序列$v_i$为$\left w_1, ..., w_n \right$
