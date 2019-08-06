@@ -49,4 +49,4 @@ $h$ 个类别 C={$C_1, ..., C_h$}
 
 $R_i=(r_{i1}, ..., r_{id})$, 代表服务$v_i$的关系向量. `use the network embedding model SiNE to obtain the vector`
 
-用余弦距离计算$d(S_i, S_j)$和$d(R_i, R_j)$
+用余弦距离计算$d(S_i, S_j)$和$d(R_i, R_j)$, 然后乘以权重加起来得$d(v_i, u_j)$
