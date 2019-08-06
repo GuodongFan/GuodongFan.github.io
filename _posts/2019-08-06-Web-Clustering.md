@@ -29,7 +29,7 @@ G=(V, E), V是服务的集合，$e_{i,j}=(v_i, v_j)\in E$是边， $e_{i,j}=1$ �
 
 描述服务的字符序列$v_i$为{ $w_1, ..., w_n $}， 表征学习就是最大化下面的目标函数：
 
-$\mathcal{L}$
+$\mathcal{L}=\sum \limits_{i=1}^{N} log \mathbb{P} (w_{-b}:w_{b}\|v_{i})$
 
 $w_{-b}:w_{b}$是在长度为b的上下文窗口字符序列.
 
