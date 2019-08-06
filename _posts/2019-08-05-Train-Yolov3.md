@@ -140,6 +140,10 @@ subdivisions=16
  ./darknet partial cfg/yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
 直接读入模型进行训练是不行的.
 
+## 训练
+
+./darknet detector train mydata/voc-messi.data mydata/yolov3-tiny.cfg yolov3-tiny.conv.15
+
 ## 卸载
 
 备份数据
