@@ -43,4 +43,4 @@ $f(x_i, x_j) \geq f(x_i, x_k) + \delta$
 
 $h$ 个类别 C={$C_1, ..., C_h$}
 
-最小化目标函数：$\gamma= \sum_{j}^{h}\sum_{i=1,v\in C_j}^{n}d(v_i, u_j)^2$
+最小化目标函数：$\tau= \sum_{j}^{h}\sum_{i=1,v\in C_j}^{n}d(v_i, u_j)^2$
