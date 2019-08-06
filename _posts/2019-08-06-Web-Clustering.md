@@ -33,4 +33,14 @@ $\mathcal{L}=\sum \limits_{i=1}^{N} log \mathbb{P} (w_{-b}:w_{b}\|v_{i})$
 
 $w_{-b}:w_{b}$是在长度为b的上下文窗口字符序列.
 
-$$
+$P$={$(v_i, v_j, v_k)\|e_{ij}=1, e_{ik}=-1, v_i, v_j, v_k \in V$}
+
+$v_i$ 更倾向于与正向连接的用户相似.
+
+$f(x_i, x_j) \geq f(x_i, x_k) + \delta$
+
+### 服务聚类模型
+
+$h$ 个类别 C={$C_1, ..., C_h$}
+
+最小化目标函数：$\mathcal{T}= \sum_{j}^{h}\sum_{i=1,v\in C_j}^{n}d(v_i, u_j)^2$
