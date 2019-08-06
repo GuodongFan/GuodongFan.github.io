@@ -44,3 +44,9 @@ $f(x_i, x_j) \geq f(x_i, x_k) + \delta$
 $h$ 个类别 C={$C_1, ..., C_h$}
 
 最小化目标函数：$\tau= \sum_{j}^{h}\sum_{i=1,v\in C_j}^{n}d(v_i, u_j)^2$
+
+`正负向怎么量化的？
+
+$R_i=(r_{i1}, ..., r_{id})$, 代表服务$v_i$的关系向量. `use the network embedding model SiNE to obtain the vector`
+
+用余弦距离计算$d(S_i, S_j)$和$d(R_i, R_j)$
