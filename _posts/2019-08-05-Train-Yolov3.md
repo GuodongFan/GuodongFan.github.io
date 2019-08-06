@@ -139,3 +139,16 @@ subdivisions=16
 
  ./darknet partial cfg/yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
 直接读入模型进行训练是不行的.
+
+## 卸载
+
+备份数据
+tar -czf data.tar /data/
+
+阿里云按量计费不用硬盘也呼呼的收费，卸载了然后安装个小的.
+umount /data
+
+不知道为何 就/data 别的目录都可以挂不上，重启下试试
+
+还原备份数据
+tar -zxvf data.tar -C /data
