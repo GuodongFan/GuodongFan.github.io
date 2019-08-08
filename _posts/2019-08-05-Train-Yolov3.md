@@ -142,6 +142,11 @@ subdivisions=16
 
 ## 训练
 
+opencv 配置cuda https://blog.csdn.net/u014613745/article/details/78310916
+安装opencv
+
+修改makefile opencv=1
+
 ./darknet detector train mydata/voc-messi.data mydata/yolov3-tiny.cfg yolov3-tiny.conv.15
 
 ## 卸载
