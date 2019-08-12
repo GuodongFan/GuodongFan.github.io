@@ -1,5 +1,5 @@
 ---
-title: CornerNet: Detecting Objects as Paired Keypoints
+title: CornerNet, Detecting Objects as Paired Keypoints
 published: false
 category: review
 tag: Detection
