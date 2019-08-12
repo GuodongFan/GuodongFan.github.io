@@ -20,3 +20,19 @@ anchor boxes 有两个缺点：1. 需要大量的anchor boxes，因为检测器�
 corner pooling, 边界框的一角通常在目标之外， 角点不能根据当前的信息进行定位. 为了确定像素位置是否有左上角，我们需要水平向右的看目标的最上面边界（寻找水平方向的极大值），并且从垂直方向向底看目标最左边的边界.  由此设计了两个方向的max-pooling. `这种引入人为的特征其实不能算优势，也可能影响精度`
 
 为什么detecting corner 有效？ 1. box的中心很难去定位，因为它需要物体的四个边, corner只需要两个, 并且使用cornor pooling. 2. corners 提供了更有效的方法来密集离散化box的空间： 使用$O(wh)$的corner去表达$O(w^2h^w)$个可能的anchor boxes.
+
+
+## Overview
+
+2*C*H*W
+
+### 检测corner
+
+### 对corner分组
+灵感来源于multi-person pose estimate.
+
+左上角和右下角的embedding距离应该比较小. (？有的物体比较大，有的比较小)
+
+### Corner Pooling
+
+### Hourglass Network (backbone)
