@@ -1,6 +1,6 @@
 ---
 title: Detecting Objects as Paired Keypoints
-published: false
+published: true
 category: review
 tag: Detection
 ---
