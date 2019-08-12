@@ -1,5 +1,5 @@
 ---
-title: CornerNet, Detecting Objects as Paired Keypoints
+title: CornerNet-Detecting Objects as Paired Keypoints
 published: false
 category: review
 tag: Detection
@@ -24,9 +24,12 @@ corner pooling, 边界框的一角通常在目标之外， 角点不能根据当
 
 ## Overview
 
-2*C*H*W
+
 
 ### 检测corner
+2*C*H*W
+
+
 
 ### 对corner分组
 灵感来源于multi-person pose estimate.
