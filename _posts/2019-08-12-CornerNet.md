@@ -35,11 +35,18 @@ $P_{cij}$  location(i,j) class c.
 
 $y_{cij}$ ground truth.
 
-Focal loss主要解决one-stage目标检测中正负样本比例严重失衡问题. 该损失函数降低了大量简单负样本再训练中所占的权重.
+Focal loss主要解决one-stage目标检测中正负样本比例严重失衡问题`class imbalance`. 该损失函数降低了大量简单负样本再训练中所占的权重.
 
 Focal loss是在交叉熵损失函数基础上进行修改.
 
 $L=-ylogy^{'}-(1-y)log(1-y^{'})$
+对于y=1正样本而言，输出概率越大损失越小.
+对于y=0负样本而言，输出概率越小损失越小.
+
+$\alpha$然可以平衡正负样本的重要性， $\gamma$调节简单样本权重降低的速率.
+
+$\gamma=2$，对于正样本，预测结果为0.95，损失会变得更小. 而预测概率为0.3的样本损失相对很大.
+
 
 ### 对corner分组
 灵感来源于multi-person pose estimate.
