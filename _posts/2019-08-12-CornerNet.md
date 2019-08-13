@@ -27,7 +27,7 @@ corner pooling, 边界框的一角通常在目标之外， 角点不能根据当
 
 
 ### 检测corner
-2*C*H*W
+$2\times C\times H\times W$
 
 
 
