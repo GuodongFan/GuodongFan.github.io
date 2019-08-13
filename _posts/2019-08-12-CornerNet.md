@@ -27,9 +27,9 @@ corner pooling, 边界框的一角通常在目标之外， 角点不能根据当
 
 
 ### 检测corner
-$2\times C\times H\times W$
+$2\times C\times H\times W$ 
 
-
+$e^{-\frac{x^2+y^2}{2\sigma ^2}}$
 
 ### 对corner分组
 灵感来源于multi-person pose estimate.
