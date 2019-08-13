@@ -9,7 +9,7 @@ CornerNet: Detecting Objects as Paired Keypoints Hei Law, Jia Deng
 
 启发于自底向上的骨架检测算法.
 
-## Anchor Box版本的缺点
+## Anchor Box版本的缺点 (Motivation)
 
 anchor boxes 有两个缺点：1. 需要大量的anchor boxes，因为检测器区分是否每个anchor box有效的覆盖一个ground truth box，并且很多的anchor box要求确保覆盖大部分的ground truth boxes. 最后，就只有一小部分anchor boxes会与ground truth重叠，这就导致了正负样本的不平衡，减慢了训练速度. 2. anchor boxes引入了很多超参和设计选择. 包括多少个box，它的大小及宽高比.
 
@@ -54,5 +54,8 @@ $\gamma=2$，对于正样本，预测结果为0.95，损失会变得更小. 而�
 左上角和右下角的embedding距离应该比较小. (？有的物体比较大，有的比较小)
 
 ### Corner Pooling
+
+pull损失用于组合角点,push损失用于分离角点.
+
 
 ### Hourglass Network (backbone)
