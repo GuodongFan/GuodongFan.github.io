@@ -31,7 +31,15 @@ $2\times C\times H\times W$
 
 削弱惩罚 $e^{-\frac{x^2+y^2}{2\sigma ^2}}$
 
-$P_{cij}$
+$P_{cij}$  location(i,j) class c.
+
+$y_{cij}$ ground truth.
+
+Focal loss主要解决one-stage目标检测中正负样本比例严重失衡问题. 该损失函数降低了大量简单负样本再训练中所占的权重.
+
+Focal loss是在交叉熵损失函数基础上进行修改.
+
+$L=-ylogy^{''}$
 
 ### 对corner分组
 灵感来源于multi-person pose estimate.
