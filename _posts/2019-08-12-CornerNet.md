@@ -39,7 +39,7 @@ Focal loss主要解决one-stage目标检测中正负样本比例严重失衡问�
 
 Focal loss是在交叉熵损失函数基础上进行修改.
 
-$L=-ylogy^{''}$
+$L=-ylogy^{'}-(1-y)log(1-y^{'})$
 
 ### 对corner分组
 灵感来源于multi-person pose estimate.
