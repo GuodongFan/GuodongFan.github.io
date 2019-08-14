@@ -25,4 +25,4 @@ Foure categories: 1. utility-based 2. skyline-based 3. collaborative filter base
 
 representativeness and diversity: 1. representativeness requires that for any service in the recommendation results there must not be any other services that are more similar to customer’s quality preference in terms of all quality dimensions. 2. Diversity takes a step further by requiring that the recommendation results should include services that are representative in as many quality dimensions as possible.
 
-![Architecture](http://plusnet.cn/assets/include/fcos_architecture.png)
+![Architecture](http://plusnet.cn/assets/include/DQSCR.png)
