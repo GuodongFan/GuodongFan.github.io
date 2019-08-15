@@ -25,7 +25,7 @@ profit = $-Cost(habitat)=f_c(x_1, x_2, ..., x_{Nvar})$
 
 egg laying radius (ELR)
 
-ELR = $\alpha \times \frac{\mbox{Number of current cuckoo's eggs}}{Total number of eggs} \times (var_{hi}-var_{low})$
+ELR = $\alpha \times \frac{\mbox{Number of current cuckoo's eggs}}{\mbox{Total number of eggs}} \times (var_{hi}-var_{low})$
 
 $\alpha$ is an integer, supposed to handle the maximum value of ELR.
 
