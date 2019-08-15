@@ -15,13 +15,13 @@ Ramin Rajabioun, Applied Soft Computing, sci 2区
 
 Habitat. In a $N_var$-dimentional optimization problem, a habitat is an array of $1\times N_{var}$, representing current living position of cuckoo.
 
-habitat = [$x_1, x_2, ..., x_N_{var}$]
+habitat = [$x_1, x_2, ..., x_{Nvar}$]
 
-每个变量的值($x_1, x_2, ..., x_N_{var}$)是浮点型数字. The profit of a habitat is obtained by evaluation of profit function $f_p$ at a habitat ($x_1, x_2, ..., x_N_{var}$).
+每个变量的值($x_1, x_2, ..., x_{Nvar}$)是浮点型数字. The profit of a habitat is obtained by evaluation of profit function $f_p$ at a habitat ($x_1, x_2, ..., x_N_{var}$).
 
-profit = $f_p(habitat)=f_p(x_1, x_2, ..., x_N_{var})$
+profit = $f_p(habitat)=f_p(x_1, x_2, ..., x_{Nvar})$
 
-profit = $-Cost(habitat)=f_c(x_1, x_2, ..., x_N_{var})$
+profit = $-Cost(habitat)=f_c(x_1, x_2, ..., x_{Nvar})$
 
 egg laying radius (ELR)
 
