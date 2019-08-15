@@ -5,7 +5,7 @@ category: review
 tag: Optimization
 ---
 
-Ramin Rajabioun, Applied Soft Computing, sci 2区
+Cuckoo Optimization Algorithm, Ramin Rajabioun, Applied Soft Computing, sci 2区
 
 ## Motivation
 
