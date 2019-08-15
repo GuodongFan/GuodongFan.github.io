@@ -17,7 +17,7 @@ Habitat. In a $N_var$-dimentional optimization problem, a habitat is an array of
 
 habitat = [$x_1, x_2, ..., x_{Nvar}$]
 
-每个变量的值($x_1, x_2, ..., x_{Nvar}$)是浮点型数字. The profit of a habitat is obtained by evaluation of profit function $f_p$ at a habitat ($x_1, x_2, ..., x_N_{var}$).
+每个变量的值($x_1, x_2, ..., x_{Nvar}$)是浮点型数字. The profit of a habitat is obtained by evaluation of profit function $f_p$ at a habitat ($x_1, x_2, ..., x_{Nvar}$).
 
 profit = $f_p(habitat)=f_p(x_1, x_2, ..., x_{Nvar})$
 
