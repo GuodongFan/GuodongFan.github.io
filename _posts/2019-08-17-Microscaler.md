@@ -41,3 +41,11 @@ Therefore Microsaler can call the cloud Replicate Controller API to keep the ser
 ## 实验
 
 benchmark： https://github.com/GoogleCloudPlatform/microservices-demo
+
+## Limitation
+
+缺少对VM-based 的支持.
+
+Bayesian Optimization Approach 用来优化黑盒功能，会带来不必要的消耗.
+
+只有在发生SLA违规时，Microscaler才会有效地扩展应用程序。 因此，Microscaler可以采取比主动缩放方法更晚的动作。
