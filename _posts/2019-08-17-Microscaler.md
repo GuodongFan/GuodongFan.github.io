@@ -13,6 +13,8 @@ School of Data and Computer Science, Sun Yat-sen University, iCWS 2019
 
 As the workload of one application in the Cloud is unpredictable, it is crucial to automatically scale out/in with resource as few as possible on condition that meeting the SLA requirements, in the face of workload changes .
 
+`在microservice上做QoS很有搞头.`
+
 ## Some Concepts
 
 service level agreement (SLA) 是在一定开销下为保障服务的性能和可靠性，服务提供商与用户间定义的一种双方认可的协定。通常这个开销是驱动提供服务质量的主要因素。
