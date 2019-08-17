@@ -23,4 +23,16 @@ Service mesh is a dedicated (专用的) infrastructure layer for handling servic
 
 Istio is a completely open source service mesh that sits transparently on existing distributed applications and offers a complete solution to satisfy the diverse requirements (e.g., metrics collecting, request tracing) of micro-service applications. Istio,” https://istio.io, 2019, [Online; accessed 1-February-2019].
 
+## System Design
+
 ![Architecture](http://plusnet.cn/assets/include/Microscaler.png)
+
+### Scale Action 
+
+`对微服务是怎样实施的Scale的动作感兴趣`
+
+1. Build a Docker image for each micro service in application and stored them in a private Docker Hub.
+
+2. Microscaler modifies the micro service's processing capacity by adding containers or removing containers horizontally. 
+
+Therefore Microsaler can call the cloud Replicate Controller API to keep the service replicas number in cloud with the output of auto-scale decision.
