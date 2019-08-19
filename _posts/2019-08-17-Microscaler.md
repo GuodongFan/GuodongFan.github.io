@@ -27,6 +27,14 @@ Istio is a completely open source service mesh that sits transparently on existi
 
 ![Architecture](http://plusnet.cn/assets/include/Microscaler.png)
 
+### 确定哪个服务需要扩展
+
+Service Power.
+
+### Auto-scale Decision
+
+`Online 体现在哪？` 使用Bayesian Optimaization 去决定how many instances should be scaled out.
+
 ### Scale Action 
 
 `对微服务是怎样实施的Scale的动作感兴趣`
