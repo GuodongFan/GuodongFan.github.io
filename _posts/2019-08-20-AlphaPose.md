@@ -26,6 +26,9 @@ Parametirc Pose Non-Maximum-Suppression (NMS). Pose-Guided Proposals Generator (
 
 ### STN and SDTN
 
+`The spatial transformer network (STN) has demonstrated excellent performance in selecting region of interests automatically.`
+
+
 Mathematically, the STN performs a 2D affine transformation 仿射变换.
 
 A spatial detransformer network (SDTN) is required to remap the estimated human pose back to the original image coordinate.
@@ -35,3 +38,20 @@ SDTN is an inverse procedure of STN.
 $[\gamma_1 \gamma_2]=[\theta_1 theta_2]^{-1}$
 $\gamma_3 -1 \times [\gamma_1 \gamma_2]\theta_3$
 
+### Parallel SPPE
+
+`To further help STN extract good human-dominant regions.` 
+
+
+## Parametric Pose NMS
+
+Human detectors inevitably generate redundant detections. Therefore, pose non-maximum suppression (NMS) is required to eliminate the redundancies. 
+
+The pose $P_i$, with $m$ joins is denoted as {$<k_i^1, c_i^1>, ..., <k_i^m, c_i^m>$}, where $k_i^j$  and $c_i^j$ are the $j^{th}$ location and confidence score of joints respectively.
+
+
+### Elimination Criterion 
+
+`To define pose similarity in order to eliminate the poses which are too close and too similar to each other.`
+
+Pose distance metric $d(P_i, P_j|\Lambda)$
