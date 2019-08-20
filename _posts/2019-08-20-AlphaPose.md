@@ -55,3 +55,6 @@ The pose $P_i$, with $m$ joins is denoted as {$<k_i^1, c_i^1>, ..., <k_i^m, c_i^
 `To define pose similarity in order to eliminate the poses which are too close and too similar to each other.`
 
 Pose distance metric $d(P_i, P_j\|\Lambda)$ to measure the pose similarity, and a threshold $\eta$ as elimination criterion, where $\Lambda$ is a parameter set of function $d(\cdot)$.
+
+$f(P_i, P_j\|\Lambda, \eta)=\mathbb{1}[d(P_i, P_j\|\Lambda, \lambda)\le \eta]$. If $d(\cdot)$ is smaller than $\eta$, the output of $f(\cdot)$ should be 1.
+
