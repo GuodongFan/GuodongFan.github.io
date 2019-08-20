@@ -35,7 +35,7 @@ A spatial detransformer network (SDTN) is required to remap the estimated human 
 
 SDTN is an inverse procedure of STN.
 
-$[\gamma_1 \gamma_2]=[\theta_1 theta_2]^{-1}$
+$[\gamma_1 \gamma_2]=[\theta_1 \theta_2]^{-1}$
 $\gamma_3 -1 \times [\gamma_1 \gamma_2]\theta_3$
 
 ### Parallel SPPE
@@ -54,4 +54,4 @@ The pose $P_i$, with $m$ joins is denoted as {$<k_i^1, c_i^1>, ..., <k_i^m, c_i^
 
 `To define pose similarity in order to eliminate the poses which are too close and too similar to each other.`
 
-Pose distance metric $d(P_i, P_j|\Lambda)$ to measure the pose similarity, and a threshold $\eta$ as elimination criterion.
+Pose distance metric $d(P_i, P_j|\Lambda)$ to measure the pose similarity, and a threshold $\eta$ as elimination criterion, where $\Lambda$ is a parameter set of function $d(\dot)$.
