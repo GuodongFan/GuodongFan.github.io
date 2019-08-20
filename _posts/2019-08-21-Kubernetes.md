@@ -37,3 +37,25 @@ source "/usr/local/bin/virtualenvwrapper.sh"
 export WORKON_HOME="~/dev/PYTHON_ENVS"
 ```
 
+Create then activate the new environment.
+
+```
+mkvirtualenv --python=/usr/bin/python3 trendinggitrepositories
+workon trendinggitrepositories
+```
+
+Create the application directories.
+
+```
+mkdir trendinggitrepositories
+cd trendinggitrepositories
+mkdir api
+cd api
+```
+
+Install Flask.
+
+```
+pip install flask
+```
+
