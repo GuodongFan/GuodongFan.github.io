@@ -18,4 +18,15 @@ Mathematical structures used to model pairwise relations between objects.
 Network exist in the real world. (Data)
 Social network, logistic network, biology network, transaction network, etc.
 
-A 
+### Structed-preserved network embedding
+
+How to define neighborhood in networks? Deepwalk.
+
+Deepwalk preserve social relation in vector space.
+
+### High-Order Proximity
+
+Solve the sparsity problem of network connnections.
+
+Measure indirect relationship between nodes.
+
