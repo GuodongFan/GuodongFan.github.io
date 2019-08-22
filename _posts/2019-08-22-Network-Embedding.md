@@ -54,10 +54,13 @@ Measure indirect relationship between nodes.
 
 一个优秀的方法是要建立在前人工作的基础上而不是凭空产生，并且当前最热门的问题并不一定是最值得研究的，冷门的问题也有其潜在的研究价值.
 
-## 相关论文
+## 相关论文及资料
 
 A Tutorial on Network Embeddings, Stony Brook University, Haochen Chen
 
 DeepWalk: Online Learning of Social Representations, Stony Brook University, Bryan Perozzi
 
 Representation Learning for Attributed Multiplex Heterogeneous Network, Tsinghua University, Yukuo Cen
+
+https://cloud.tencent.com/developer/article/1349252
+
