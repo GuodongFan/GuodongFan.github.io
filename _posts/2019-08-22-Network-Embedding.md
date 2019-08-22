@@ -2,7 +2,7 @@
 title: Network Embedding
 published: true
 category: Learning
-tag: Embedding 
+tag: Embedding Deepwalk 
 ---
 
 将数据转换为网络表示和从网络种提取潜在表示所面临的挑战.
