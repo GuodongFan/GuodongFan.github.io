@@ -1,7 +1,7 @@
 ---
 title: Network Embedding
 published: true
-category: Research
+category: research
 tag: Network Embedding 
 ---
 
