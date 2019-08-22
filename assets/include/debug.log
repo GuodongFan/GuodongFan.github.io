@@ -1,0 +1,5 @@
+[0822/103909:INFO:exception_record.cc(518)] [QB]Process ID: 22140 Type: 2
+[0822/103917:INFO:exception_record.cc(518)] [QB]Process ID: 20612 Type: 2
+[0822/110213:INFO:exception_record.cc(518)] [QB]Process ID: 28356 Type: 2
+[0822/121109:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0822/125156:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
