@@ -50,5 +50,6 @@ Measure indirect relationship between nodes.
 
 由于网络的节点数目可能达到百万甚至千万级，节点的one-hot编码会过于稀疏，不同于传统的skip-gram模型直接用softmax函数得到输出，deepwalk采用的是层级softmax方法.
 
-![Architecture](http://plusnet.cn/assets/include/deepwalk_hierachical.jpg
+![Architecture](http://plusnet.cn/assets/include/deepwalk_hierachical.png)
+
 一个优秀的方法是要建立在前人工作的基础上而不是凭空产生，并且当前最热门的问题并不一定是最值得研究的，冷门的问题也有其潜在的研究价值.
