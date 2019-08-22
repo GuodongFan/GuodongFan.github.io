@@ -64,3 +64,5 @@ Representation Learning for Attributed Multiplex Heterogeneous Network, Tsinghua
 
 https://cloud.tencent.com/developer/article/1349252
 
+https://blog.csdn.net/itplus/article/details/37969979
+
