@@ -27,7 +27,7 @@ tag: Word2vec
 
 a)  e=0， 计算$x_w$=$\frac{1}{2c}\sum_{i=1}^{2c} x_i$
 b)  for j = 2 to $l_w$, 计算：
-    $f=\Simgma(x_w^T θ_{j−1}^{w})$
+    $f=\simgma(x_w^T θ_{j−1}^{w})$
     $g=(1−d_j^w−f)η$ 
     $e=e+gθ_{j−1}^{w}$
     $θ_{j−1}^{w}=θ_{j−1}^{w}+gx_w$
