@@ -8,3 +8,14 @@
 [0822/213156:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
 [0822/213158:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
 [0823/080731:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/122826:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/125355:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/132923:INFO:exception_record.cc(518)] [QB]Process ID: 22200 Type: 2
+[0823/132924:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 3
+[0823/132924:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 1
+[0823/132924:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 5
+[0823/184522:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/214528:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/214529:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0823/214529:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0826/081003:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
