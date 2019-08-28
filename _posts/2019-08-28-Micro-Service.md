@@ -31,5 +31,3 @@ Kubernetes是自动化容器操作的开源平台. 这些容器操作包括：�
 ![Architecture](http://plusnet.cn/assets/include/k8s_architecture.png)
 
 ![Architecture](http://plusnet.cn/assets/include/k8s_node2.png)
-
-![Architecture](http://plusnet.cn/assets/include/k8s_node.png)
