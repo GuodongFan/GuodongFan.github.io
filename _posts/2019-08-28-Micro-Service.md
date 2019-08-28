@@ -24,3 +24,6 @@ Kubernetes是自动化容器操作的开源平台. 这些容器操作包括：�
 3. 容器编排承租，并提供负载均衡.
 4. 调度容器在哪个机器上运行.
 
+![Architecture](http://plusnet.cn/assets/include/k8s_architecture.png)
+
+![Architecture](http://plusnet.cn/assets/include/k8s_node.png)
