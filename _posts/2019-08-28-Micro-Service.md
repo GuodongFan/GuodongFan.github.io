@@ -15,6 +15,10 @@ tag: Microservice
 
 `服务网格`是一个基础设施层，用于处理服务间通信。云原生应用有着复杂的服务拓扑，服务网格保证请求可以在这些拓扑中可靠地穿梭. 在实际应用当中，服务网格通常是由一系列轻量级的网络代理组成的，它们与应用程序部署在一起，但应用程序不需要知道它们的存在.
 
+![Architecture](http://plusnet.cn/assets/include/istio.png)
+
+![Architecture](http://plusnet.cn/assets/include/istio1.png)
+
 ## Kubernetes (k8s) 
 Kubernetes是自动化容器操作的开源平台. 这些容器操作包括：部署、调度和节点集群间扩展.
 
