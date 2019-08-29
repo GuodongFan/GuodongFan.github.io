@@ -8,9 +8,10 @@ tag: work
 ## 质心位置
 
 $
-X_{cent}=(x_l+x_r)/2 \\
-Y_{cent}=(y_t+y_b)/2
+X_{cent}=(x_l+x_r)/2 
 $
+
+$Y_{cent}=(y_t+y_b)/2$
 
 ## 人体宽高比
 
