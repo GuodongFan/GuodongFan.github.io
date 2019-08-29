@@ -17,3 +17,8 @@ $
 \right.  
 \end{equation}  
 $
+
+## 人体宽高比
+
+$R_{ratio}=W/H$
+
