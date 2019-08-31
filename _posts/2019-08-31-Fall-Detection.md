@@ -25,6 +25,7 @@ $R_{ratio}=W/H$
 <div class="mermaid">
 graph TB
 
-A[YOLOv3检测目标]-->B(卷积神经网络fine-tune 跌倒识别)-->C(画出目标框及任务状态)
+A[YOLOv3检测目标]-->B(卷积神经网络fine-tune 跌倒识别)
+B-->C(画出目标框及任务状态)
 
 </div>
