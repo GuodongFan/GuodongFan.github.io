@@ -1,5 +1,5 @@
 ---
-title: Keras精调网络
+title: Keras制作自己的数据集并精调网络
 published: true
 category: work
 tag: work 
