@@ -20,7 +20,7 @@ input=(none,none,3)
 
 导入完毕后，我们可以通过print(X.shape)看看导入是否正确，例如我们导入了30000张60*160的图片，应得到：（30000, 60, 160）
 
-model.fit(trainX, trainY, batch_size=32, epochs=50) 一开始就把所有的数据都读入内存，这样有两个缺点，1. 存储使用numpy.array数据维度必须一致. 2. 图像太大内存就爆了.
+model.fit(trainX, trainY, batch_size=32, epochs=50) 一开始就把所有的数据都读入内存，这样有两个缺点，1. 存储使用numpy.array`数据维度必须一致.` 2. 图像太大内存就爆了.
 
 于是就有fit_generator及train_on_batch函数. 
 
