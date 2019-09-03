@@ -22,8 +22,35 @@ input=(none,none,3)
 
 model.fit(trainX, trainY, batch_size=32, epochs=50) 一开始就把所有的数据都读入内存，这样有两个缺点，1. 存储使用numpy.array数据维度必须一致. 2. 图像太大内存就爆了.
 
-于是就有fit_generator这个函数. 
+于是就有fit_generator及train_on_batch函数. 
 
+```
+def gen(images, labels, batchsz = 1):
+    batchCount = 0
+    while True:
+        for i in range(images.size):
+            inputs = []
+            targets = []
+            temp_image = cv2.imread(images[i]) # line[1] is path to image
+            temp_name = labels[i] # steering angle
+            inputs.append((temp_image.astype(float) - 128) / 128)
+            targets.append(temp_name)
+            batchCount += 1
+            if batchCount >= batchsz:
+                batchCount = 0
+                X = np.array(inputs)
+                y=np.array(targets)
+                if y[0] == '1':
+                    y = np.array([[1,0]])
+                else:
+                    y = np.array([[0,1]])
+                yield X, y
+
+```
+
+```
+train = model2.fit_generator(gen(x_train, y_train), steps_per_epoch=100, epochs=300, validation_data=gen(x_test, y_test), validation_steps=10)
+```
 
 ## 精调网络
 ```
