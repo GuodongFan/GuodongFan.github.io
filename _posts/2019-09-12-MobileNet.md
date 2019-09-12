@@ -13,7 +13,7 @@ tag: deep learning
 
 是 floating point operations 的缩写（注意 s 小写），可以用来衡量算法/模型的复杂度，这关系到算法速度，大模型的单位通常为 G，小模型单位通常为 M
 
-通常只考虑乘加操作(Multi-Adds)的数量，而且只考虑 CONV 和 FC 等参数层的计算量，忽略 BN 和PReLU 等等。一般情况，CONV 和 FC 层也会 忽略仅纯加操作 的计算量，如 bias 偏置加和 shotcut 残差加等，目前技术有 BN 的 CNN 可以不加 bias
+通常只考虑乘加操作(Multi-Adds)的数量，而且只考虑 CONV 和 FC 等参数层的计算量，忽略 BN 和PReLU 等等. 一般情况，CONV 和 FC 层也会 忽略仅纯加操作 的计算量，如 bias 偏置加和 shotcut 残差加等，目前技术有 BN 的 CNN 可以不加 bias
 
 ## 计算公式
 
