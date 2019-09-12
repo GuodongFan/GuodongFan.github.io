@@ -52,7 +52,22 @@ mode: 整数，指定规范化的模式，取0或1.
 我们大都使用的都是mode=0也就是按特征规范化，对于放置在卷积和池化之间或之后的4D张量，需要设置axis=1，而Dense层之后的BN层则直接使用默认值就好了.
 
 
+## 学习率
 
+```
+keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, verbose=0, mode='auto', epsilon=0.0001, cooldown=0, min_lr=0)
+```
 
+monitor：被监测的量
 
+factor：每次减少学习率的因子，学习率将以lr = lr*factor的形式被减少
 
+patience：当patience个epoch过去而模型性能不提升时，学习率减少的动作会被触发
+
+mode：‘auto’，‘min’，‘max’之一，在min模式下，如果检测值触发学习率减少。在max模式下，当检测值不再上升则触发学习率减少。
+
+epsilon：阈值，用来确定是否进入检测值的'平原区'
+
+cooldown：学习率减少后，会经过cooldown个epoch才重新进行正常操作
+
+min_lr：学习率的下限
