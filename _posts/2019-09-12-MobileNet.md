@@ -37,9 +37,9 @@ FLOPs:$C_{in} \times C_{out}$
 
 depthwise 卷积时只使用了一种维度为in_channels的卷积核进行特征提取（没有进行特征组合）
 
-pointwise 卷积只使用了output_channels 种 维度为$in_channels 1\times 1 $的卷积核进行特征组合，普通卷积不同 depth 层的权重是按照 1:1:1…:1的比例进行相加的，而在这里不同 depth 层的权重是按照 不同比例(可学习的参数) 进行相加的
+pointwise 卷积只使用了output_channels 种 维度为$in\_channels 1\times 1 $的卷积核进行特征组合，普通卷积不同 depth 层的权重是按照 1:1:1…:1的比例进行相加的，而在这里不同 depth 层的权重是按照 不同比例(可学习的参数) 进行相加的
 
-参数数量由原来的$p1 = F \times F \times in_channels \times output_channels$ 变为了$p2 = F \times F\times in_channels\times 1 + 1\times 1\times in_channels\times output_channels$
+参数数量由原来的$p1 = F \times F \times in\_channels \times output\_channels$ 变为了$p2 = F \times F\times in\_channels\times 1 + 1\times 1\times in\_channels\times output\_channels$
 
 ## MobileNetV2
 
