@@ -49,6 +49,6 @@ V2再depthwise卷积之前新加了一个pointwise卷积，可以提升维度。
 
 ## 参考
 
-https://blog.csdn.net/mzpmzk/article/details/82976871
+https://zhuanlan.zhihu.com/p/33075914
 
 https://zhuanlan.zhihu.com/p/80041030
