@@ -61,3 +61,11 @@ S = ("service composition" OR mashup) AND "end user" AND "user study"
 2. Extract the descriptions from each study based on the eight components of our review framework.
 3. Pull out the publication details of each study from the EndNote library.
 
+
+### Data Synthesis and Analysis.
+
+1. The data extracted from each study were sorted and aggregated into eight categories, corresponding to the eight review components.
+2. Within each category, the data were sorted into different subcategories (types). For example, the data in the Study Goals category were classified into one of the Exploratory, Confirmatory and Explanatory subcategories; the data in the Data Collection Methods
+category were divided into the Observation, Interview, Focus Group, and Questionnaire subcategories.
+
+`回来再写，吃完饭准备去重庆，现在时间2019年9月20日16点50分`
