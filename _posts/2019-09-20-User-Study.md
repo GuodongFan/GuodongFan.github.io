@@ -49,4 +49,15 @@ S = ("service composition" OR mashup) AND "end user" AND "user study"
 
 ### Database Search
 
-### 
+### Study Selection
+根据标准筛选文献。
+
+### Data Extraction
+
+数据提取目的是获得可以有助于回答研究问题的所需数据。
+
+步骤：
+1. Read each selected study in detail to obtain an overall picture of the study.
+2. Extract the descriptions from each study based on the eight components of our review framework.
+3. Pull out the publication details of each study from the EndNote library.
+
