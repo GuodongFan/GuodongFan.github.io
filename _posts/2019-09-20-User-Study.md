@@ -27,6 +27,26 @@ during software design.
 
 ![User Study](http://plusnet.cn/assets/include/userstudy_classify.png)
 
-![User Study](http://plusnet.cn/assets/include/review_framework.png)
+![Framework](http://plusnet.cn/assets/include/review_framework.png)
 
-## 
+## Review Plan
+### Selecting Relevant Literature Databases
+IEEE Xplore (ieeexplore.ieee.org)
+ScienceDirect (www.sciencedirect.com)
+ACM DL (dl.acm.org)
+SpringerLink (link.springer.com)
+
+### Search Strings
+
+S = ("service composition" OR mashup) AND "end user" AND "user study"
+注意引擎的差异
+
+### Inclusion and Exclusion Criteria
+无论搜索字符串有多准确，返回的结果总是包含大量不相关的研究。因此定义一系列的标准确定其相关性或其他方面，并将相关研究的数量减少到可控制的规模。
+![Framework](http://plusnet.cn/assets/include/study_selection_criteria.png)
+
+## Conducting the Review
+
+### Database Search
+
+### 
