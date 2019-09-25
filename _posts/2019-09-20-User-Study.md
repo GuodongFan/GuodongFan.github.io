@@ -69,3 +69,29 @@ S = ("service composition" OR mashup) AND "end user" AND "user study"
 category were divided into the Observation, Interview, Focus Group, and Questionnaire subcategories.
 
 `回来再写，吃完饭准备去重庆，现在时间2019年9月20日16点50分`
+
+## Research Findings
+
+To what extent can we recognize the eight components of our review framework in the selected EUSC user studies? How cohesive are these components presented in these studies? Can we recognize any exemplars from the selected user studies?
+
+What type of user study is most common among the selected EUSC user studies? Which compositional approach is most studied?What issues about EUSC tools are most studied?
+
+What are the backgrounds of the participants of these studies? Where are they from? How have they been recruited?Where were these studies conducted?
+
+What is themost commonly used data collectionmethod in these studies?What is the most commonly used data analysis method in these studies?
+
+What are the main characteristics of a EUSC user study?
+
+## REFLECTION AND PROPOSAL OF A DESIGN FRAMEWORK FOR XX
+
+### Reflection on Review Results
+
+Some limitations, and etc.
+
+### Reflection on our Review Framework
+
+
+
+
+
+

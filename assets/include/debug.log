@@ -19,3 +19,4 @@
 [0823/214529:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
 [0823/214529:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
 [0826/081003:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0920/172013:INFO:exception_record.cc(518)] [QB]Process ID: 11448 Type: 2
