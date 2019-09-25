@@ -1,5 +1,5 @@
 ---
-title: SatEC: A 5G Satellite Edge Computing Framework Based on Microservice Architecture
+title: A 5G Satellite Edge Computing Framework Based on Microservice Architecture
 published: true
 category: review
 tag: review
