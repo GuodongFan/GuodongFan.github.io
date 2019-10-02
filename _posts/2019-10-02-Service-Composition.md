@@ -23,5 +23,5 @@ The objective is to select a set of services that can optimize the QoS of the en
 
 QoS 处理：Multiple QoS criteria Overall score, Skyline.
 
-QoS-related service composition methods: QoS-aware service composition (functional+QoS) 
+QoS-related service composition methods: QoS-aware service composition (functional+QoS), Service selection
 
