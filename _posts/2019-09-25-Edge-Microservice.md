@@ -10,7 +10,7 @@ Lei Yan, et al. Chinese Academy of Sciences, 2019
 
 aim to reduce delay and expand network coverage.
 
-## Architecture
+## Architecture                     
 
 ![Framework](http://plusnet.cn/assets/include/satellite_service.png)
 
