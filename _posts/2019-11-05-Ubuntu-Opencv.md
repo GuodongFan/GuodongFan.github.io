@@ -27,3 +27,11 @@ cmake -D CMAKE_BUILD_TYPE=Release \
 
 估计用cmake-gui的时候也是GTK没打开。
 
+
+### 错误 
+
+opencv_dnn
+
+```
+-D WITH_OPENMP=ON
+```
