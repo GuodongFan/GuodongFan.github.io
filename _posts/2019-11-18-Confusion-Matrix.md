@@ -20,7 +20,7 @@ tag: work
 
 ## 三级指标
 
-$F1-Score=\proc{2PR}{P+R}$, F1-Score指标综合了Precision与Recall的产出结果。F1-Score的取值范围0-1，1代表模型输出最好，0代表模型输出结果最差。
+$F1-Score=/frac{2PR}{P+R}$, F1-Score指标综合了Precision与Recall的产出结果。F1-Score的取值范围0-1，1代表模型输出最好，0代表模型输出结果最差。
 
 ## 多分类
 当分类问题是二分类，混淆矩阵可用上面的计算方法。当分类的结果用于多种分类时，混淆矩阵同样适用。
