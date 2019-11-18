@@ -5,7 +5,7 @@ category: work
 tag: work
 ---
 
-![Framework](http://plusnet.cn/assets/include/confusion_matrix.png)
+![Framework](http://plusnet.cn/assets/include/cufusion_matrix.png)
 
 ## 一级指标
 
@@ -16,7 +16,7 @@ tag: work
 4. 真实值是negative，模型认为是negative的数量。TN
 
 ## 二级指标
-![Framework](http://plusnet.cn/assets/include/confusion_matrix_2.png)
+![Framework](http://plusnet.cn/assets/include/cufusion_matrix_2.png)
 
 ## 三级指标
 
