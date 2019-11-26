@@ -18,8 +18,12 @@ Sijie Yan, The Chinese University of Hong Kong，AAAI2018.
 
 ### Skeletion Graph Construction
 定义无向时空图$G=(V,E)$
+
 $V=\{v_{ti}\|t=1,...,T, i=1,...,N\}$
+
 The edge set $E$ is composed of two subsets.
+
 $E_S=\{v_{ti}V_{tj}\|(i,j)\in H\}$
+
 $E_F=\{v_{ti}v_{(t+1)i}\}$
 
