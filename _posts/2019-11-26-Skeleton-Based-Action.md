@@ -25,5 +25,5 @@ The edge set $E$ is composed of two subsets.
 
 $E_S=\{v_{ti}V_{tj}\|(i,j)\in H\}$
 
-$E_F=\{v_{ti}v_{(t+1)i}\}$
+$E_F={v_{ti}v_{(t+1)i}}$
 
