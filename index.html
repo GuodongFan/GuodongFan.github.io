@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Brainary</title>
+  <meta name="description" content="Brainary: Thinking systems & AI experiments." />
+  <style>
+    :root{
+      --bg:#070A0F;
+      --panel:#0B1220;
+      --panel2:#0A0F1A;
+      --text:#E7EEF9;
+      --muted:#A7B4C6;
+      --line:rgba(231,238,249,.10);
+      --line2:rgba(231,238,249,.06);
+      --accent:#7CE7FF;
+      --accent2:#B9A6FF;
+      --shadow: 0 16px 40px rgba(0,0,0,.45);
+      --radius:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(1200px 600px at 18% 12%, rgba(124,231,255,.12), transparent 60%),
+        radial-gradient(900px 540px at 80% 18%, rgba(185,166,255,.10), transparent 62%),
+        radial-gradient(700px 500px at 60% 80%, rgba(124,231,255,.06), transparent 60%),
+        linear-gradient(180deg, #060912, #070A0F 40%, #060912);
+      color:var(--text);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
+    .top{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:12px 14px;border:1px solid var(--line);border-radius:999px;
+      background:rgba(10,15,26,.55);backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;min-width:0;
+    }
+    .mark{
+      width:34px;height:34px;border-radius:10px;
+      background: linear-gradient(135deg, rgba(124,231,255,.9), rgba(185,166,255,.85));
+      box-shadow: 0 10px 25px rgba(124,231,255,.18);
+      position:relative;overflow:hidden;
+    }
+    .mark:after{
+      content:"";position:absolute;inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.45), transparent 45%);
+      transform: rotate(25deg);
+    }
+    .brand h1{
+      font-size:14px;margin:0;letter-spacing:.16em;text-transform:uppercase;
+      font-family:var(--mono);
+    }
+    .right{
+      display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;
+    }
+    .pill{
+      font-family:var(--mono);
+      font-size:12px;opacity:.9;
+      border:1px solid var(--line2);
+      padding:8px 10px;border-radius:999px;
+      background:rgba(11,18,32,.55);
+    }
+    .btn{
+      border:1px solid var(--line);
+      background:rgba(11,18,32,.75);
+      color:var(--text);
+      padding:9px 12px;border-radius:999px;
+      font-family:var(--mono);font-size:12px;
+      text-decoration:none;display:inline-flex;gap:8px;align-items:center;
+      transition:.18s transform, .18s border-color, .18s background;
+      cursor:pointer;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(124,231,255,.35); background:rgba(11,18,32,.92)}
+    .hero{padding:54px 6px 18px}
+    .headline{
+      display:flex;flex-direction:column;gap:14px;max-width:860px;
+    }
+    .title{
+      font-size:56px;line-height:1.02;margin:0;
+      letter-spacing:-.03em;
+    }
+    .subtitle{
+      margin:0;color:var(--muted);font-size:16px;line-height:1.6;
+      max-width:740px;
+    }
+    .meta{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:8px
+    }
+    .k{
+      border:1px solid var(--line2);
+      padding:7px 10px;border-radius:999px;
+      font-family:var(--mono);font-size:12px;color:rgba(231,238,249,.88);
+      background: rgba(10,15,26,.55);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      padding:18px 6px 0;
+    }
+    @media (max-width: 900px){
+      .title{font-size:44px}
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(11,18,32,.85), rgba(10,15,26,.60));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .card:before{
+      content:"";position:absolute;inset:0;
+      background:
+        radial-gradient(700px 380px at 22% 10%, rgba(124,231,255,.08), transparent 60%),
+        radial-gradient(680px 420px at 85% 25%, rgba(185,166,255,.06), transparent 60%);
+      pointer-events:none;
+    }
+    .card .inner{position:relative;padding:18px}
+    .card h2{margin:0 0 10px;font-size:14px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:rgba(231,238,249,.86)}
+    .card p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}
+    .dock{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px
+    }
+    @media (max-width: 600px){ .dock{grid-template-columns:1fr} }
+    .tile{
+      border:1px solid var(--line2);
+      border-radius:16px;
+      background: rgba(7,10,15,.35);
+      padding:14px 14px 12px;
+      transition:.18s transform,.18s border-color,.18s background;
+      text-decoration:none;
+      display:flex;flex-direction:column;gap:8px;min-height:86px;
+    }
+    .tile:hover{
+      transform: translateY(-2px);
+      border-color: rgba(124,231,255,.28);
+      background: rgba(7,10,15,.55);
+    }
+    .tile .t{
+      font-family:var(--mono);
+      font-size:12px;letter-spacing:.10em;text-transform:uppercase;
+      display:flex;align-items:center;gap:10px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: rgba(124,231,255,.9);
+      box-shadow: 0 0 0 6px rgba(124,231,255,.08);
+    }
+    .dot.purple{
+      background: rgba(185,166,255,.92);
+      box-shadow: 0 0 0 6px rgba(185,166,255,.08);
+    }
+    .tile .d{color:var(--muted);font-size:13px;line-height:1.55}
+    .side{
+      display:flex;flex-direction:column;gap:16px
+    }
+    .list{
+      margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px
+    }
+    .item{
+      border:1px solid var(--line2);
+      border-radius:14px;
+      padding:12px 12px;
+      background: rgba(7,10,15,.35);
+      display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+    }
+    .item .l{display:flex;flex-direction:column;gap:3px}
+    .item b{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .item span{color:var(--muted);font-size:13px;line-height:1.5}
+    .item a{
+      font-family:var(--mono);
+      font-size:12px;
+      text-decoration:none;
+      padding:8px 10px;border-radius:999px;
+      border:1px solid var(--line2);
+      background:rgba(11,18,32,.5);
+      white-space:nowrap;
+    }
+    .item a:hover{border-color: rgba(185,166,255,.28)}
+    .terminal{
+      font-family:var(--mono);
+      font-size:13px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: rgba(0,0,0,.35);
+      overflow:hidden;
+    }
+    .term-top{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:10px 12px;border-bottom:1px solid var(--line2);
+      background: rgba(10,15,26,.55);
+    }
+    .lights{display:flex;gap:8px;align-items:center}
+    .lights i{display:inline-block;width:10px;height:10px;border-radius:50%}
+    .lights i:nth-child(1){background:#ff5f57}
+    .lights i:nth-child(2){background:#febc2e}
+    .lights i:nth-child(3){background:#28c840}
+    .term-top .hint{color:rgba(231,238,249,.72);font-size:12px}
+    pre{
+      margin:0;padding:14px 12px 16px;
+      white-space:pre-wrap;word-break:break-word;
+      color: rgba(231,238,249,.88);
+    }
+    .cmd{color: rgba(124,231,255,.95)}
+    .muted{color: rgba(231,238,249,.62)}
+    .footer{
+      margin-top:30px;padding:18px 6px 0;color:rgba(231,238,249,.55);
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+      font-family:var(--mono);font-size:12px;
+    }
+    .footer a{color:rgba(231,238,249,.70);text-decoration:none}
+    .footer a:hover{color:rgba(124,231,255,.95)}
+    .toast{
+      position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+      background: rgba(11,18,32,.92);
+      border:1px solid var(--line);
+      padding:10px 12px;border-radius:999px;
+      font-family:var(--mono);font-size:12px;
+      color:rgba(231,238,249,.9);
+      box-shadow: 0 10px 25px rgba(0,0,0,.45);
+      opacity:0;pointer-events:none;transition:.2s opacity,.2s transform;
+    }
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(-2px)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div class="brand" aria-label="Brainary">
+        <div class="mark" aria-hidden="true"></div>
+        <h1>Brainary</h1>
+      </div>
+
+      <div class="right">
+        <div class="pill" id="statusPill">signal: idle</div>
+        <button class="btn" id="copyBtn" type="button" title="复制 brainary 指令">
+          copy: <span style="opacity:.9">/brainary</span>
+        </button>
+        <a class="btn" href="#modules" title="进入模块">
+          enter ↘
+        </a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="headline">
+        <h2 class="title">A living lab<br/>for thinking & AI.</h2>
+        <p class="subtitle">
+          Brainary 不是“关于我”，而是一个持续生长的结构：把想法变成可复用的系统，把实验变成可验证的结果。
+        </p>
+        <div class="meta">
+          <span class="k">notes</span>
+          <span class="k">systems</span>
+          <span class="k">experiments</span>
+          <span class="k">models</span>
+          <span class="k">archive</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="modules">
+      <!-- main card -->
+      <div class="card">
+        <div class="inner">
+          <h2>Modules</h2>
+          <p>入口即目录。每个模块都可以先是空的，但结构先立住 —— 之后慢慢填。</p>
+
+          <div class="dock">
+            <a class="tile" href="/notes" onclick="fake(event,'/notes')">
+              <div class="t"><span class="dot"></span> Notes</div>
+              <div class="d">短记录 / 灵感 / 读书 / 观察。像日志，但可检索。</div>
+            </a>
+            <a class="tile" href="/systems" onclick="fake(event,'/systems')">
+              <div class="t"><span class="dot purple"></span> Systems</div>
+              <div class="d">方法论 / 框架 / checklist。可复用的脑回路。</div>
+            </a>
+            <a class="tile" href="/experiments" onclick="fake(event,'/experiments')">
+              <div class="t"><span class="dot"></span> Experiments</div>
+              <div class="d">AI / code 实验仓。每个实验都有假设、过程、结论。</div>
+            </a>
+          </div>
+
+          <ul class="list" style="margin-top:14px">
+            <li class="item">
+              <div class="l">
+                <b>Now building</b>
+                <span>从零开始：先把“目录结构 + 内容规范”跑起来。</span>
+              </div>
+              <a href="#terminal">view</a>
+            </li>
+            <li class="item">
+              <div class="l">
+                <b>Principle</b>
+                <span>结构优先，结果可证：每条内容都能追溯、复现、迭代。</span>
+              </div>
+              <a href="#manifest">manifest</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- side column -->
+      <div class="side">
+        <div class="card" id="manifest">
+          <div class="inner">
+            <h2>Manifest</h2>
+            <p>Brainary 的三条规则：</p>
+            <ul class="list">
+              <li class="item">
+                <div class="l">
+                  <b>Make it structured</b>
+                  <span>先给想法一个容器：命名、分类、索引。</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="l">
+                  <b>Make it testable</b>
+                  <span>实验要有输入/输出/指标；记录要能复盘。</span>
+                </div>
+              </li>
+              <li class="item">
+                <div class="l">
+                  <b>Make it compounding</b>
+                  <span>让内容互相引用，形成增长的网络。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="terminal" id="terminal">
+          <div class="term-top">
+            <div class="lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="hint">bootstrap</div>
+          </div>
+          <pre><span class="muted">$</span> <span class="cmd">brainary init</span>
+<span class="muted">→</span> create: /notes /systems /experiments /archive
+<span class="muted">→</span> add:    index.md template + tagging rules
+<span class="muted">→</span> deploy: github pages + CNAME brainary.cn
+
+<span class="muted">$</span> <span class="cmd">brainary add</span> "First experiment: prompt-evals"
+<span class="muted">→</span> logged. linked. measurable.</pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Brainary — a small place for serious thinking.</div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="/rss.xml" onclick="fake(event,'/rss.xml')">RSS</a>
+        <a href="/archive" onclick="fake(event,'/archive')">Archive</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">copied: /brainary</div>
+
+  <script>
+    const $ = (s)=>document.querySelector(s);
+    const toast = $("#toast");
+    const pill = $("#statusPill");
+
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(()=>toast.classList.remove("show"), 1100);
+    }
+
+    $("#copyBtn").addEventListener("click", async ()=>{
+      try{
+        await navigator.clipboard.writeText("/brainary");
+        pill.textContent = "signal: copied";
+        showToast("copied: /brainary");
+        setTimeout(()=>pill.textContent="signal: idle", 900);
+      }catch(e){
+        pill.textContent = "signal: blocked";
+        showToast("copy blocked");
+        setTimeout(()=>pill.textContent="signal: idle", 900);
+      }
+    });
+
+    window.fake = function(ev, path){
+      ev.preventDefault();
+      showToast("route not ready: " + path);
+    }
+
+    $("#y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
